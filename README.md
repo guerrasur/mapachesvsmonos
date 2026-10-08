@@ -1,4 +1,4 @@
-# Mapaches vs. Monos — v0.1.0
+# Mapaches vs. Monos — v0.2.0
 
 Primer prototipo mínimo: elegir uno de tres arbustos. Cada ronda esconde un mapache radiactivo, uno de esporas y un resultado vacío, barajados antes de elegir. Solo se permite una elección por ronda; “Volver a buscar” genera otra.
 
@@ -6,7 +6,7 @@ Primer prototipo mínimo: elegir uno de tres arbustos. Cada ronda esconde un map
 
 https://guerrasur.github.io/mapachesvsmonos/
 
-Mobile-first, con ratón o teclado (Tab y Enter). Pixel art original dibujado en Canvas 2D, inspirado en las referencias del repo. Sin dependencias ni compilación.
+Mobile-first, con ratón o teclado (Tab y Enter). Rework visual inspirado en los RPG de captura clásicos: mapa cenital, panel de diálogo y pantalla de encuentro. Arbustos de 64 píxeles y mapaches originales de 96 × 96 píxeles, con sombreado, cola rayada y mutaciones específicas. Textos mínimos. Sin dependencias ni compilación.
 
 Las capturas y la ronda actual se guardan en localStorage del dispositivo. La versión está en el encabezado. Se consulta `version.json` al abrir, recuperar el foco, volver a estar online y cada 60 segundos. Una versión nueva se carga automáticamente, después de terminar la animación activa. El botón ↻ permite comprobar manualmente. Todos los recursos de código y estilo llevan la versión en su URL para evitar caché viejo.
 
