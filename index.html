@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#18271f">
+  <meta name="description" content="Buscá mapaches mutantes entre tres arbustos. Primer prototipo de Mapaches vs. Monos.">
+  <title>Mapaches vs. Monos</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=0.1.0">
+</head>
+<body>
+  <div class="app">
+    <header><a class="brand" href="./" aria-label="Mapaches vs. Monos, inicio"><span class="brand-mark" aria-hidden="true">M<span>×</span>M</span><span>MAPACHES<br>VS. MONOS</span></a><div class="version-tools"><span id="version">v0.1.0</span><button id="update" type="button" aria-label="Buscar actualizaciones">↻</button></div></header>
+    <main>
+      <div class="chapter"><span class="signal" aria-hidden="true"></span> SECTOR 01 <span class="chapter-right">LA CIUDAD INVADIDA</span></div>
+      <section class="intro"><p class="eyebrow">RASTREO DE MAPACHES</p><h1>Algo se mueve<br>entre los arbustos.</h1><p>Elegí uno. Puede esconder un mapache mutante…<br class="desktop-break"> o puede que no haya nada.</p></section>
+      <section class="hunt" aria-label="Zona de búsqueda">
+        <div class="scene"><canvas id="scene" width="320" height="208" aria-hidden="true"></canvas><div class="scene-tag">☢ ZONA RADIACTIVA</div><div class="choices" role="group" aria-label="Elegí un arbusto"><button type="button" data-bush="0" aria-label="Buscar en el arbusto 1"><span>01</span></button><button type="button" data-bush="1" aria-label="Buscar en el arbusto 2"><span>02</span></button><button type="button" data-bush="2" aria-label="Buscar en el arbusto 3"><span>03</span></button></div></div>
+        <div class="result" aria-live="polite" aria-atomic="true"><div><p id="result-label" class="eyebrow">UNA ELECCIÓN · TRES POSIBILIDADES</p><h2 id="result-title">¿Dónde vas a buscar?</h2><p id="result-detail">Tocá un arbusto para descubrir qué esconde.</p></div><button id="next" class="primary" type="button" hidden>Volver a buscar <span aria-hidden="true">→</span></button></div>
+      </section>
+      <section class="collection" aria-labelledby="collection-title"><div class="section-heading"><h2 id="collection-title">Tus hallazgos</h2><span id="collection-count">0 / 2 variantes</span></div><div id="cards" class="cards"></div><p id="save-status" class="save-status">Los hallazgos se guardan en este dispositivo.</p></section>
+    </main>
+    <footer><span>PROTOTIPO 01</span><span>Una primera búsqueda en el fin del mundo.</span></footer>
+    <p id="update-status" class="update-status" role="status" hidden></p>
+  </div>
+  <script type="module" src="./src/app.js?v=0.1.0"></script>
+</body>
+</html>
